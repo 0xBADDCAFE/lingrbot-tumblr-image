@@ -5,7 +5,7 @@ require 'redis'
 
 # Authenticate via API Key
 TUMBLR_CLIENT = Tumblr::Client.new :consumer_key => ENV['API_KEY']
-REDIS         = Redis.new(:port => ENV['REDIS_PORT'])
+REDIS         = Redis.new(:url => ENV['REDIS_URL'])
 
 # Make the request
 all_user = Hash.new
