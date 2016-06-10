@@ -19,7 +19,7 @@ all_user = Hash.new
 # end
 
 get '/' do
-  posts.length
+  'hi'
 end
 
 get '/random' do
